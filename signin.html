@@ -44,8 +44,9 @@ document.getElementById('signinForm').addEventListener("submit", function(event)
     alert("Login successful!!");
     let option=confirm("If you want to start exam then click ok...")
     if(option)
+    {window.location.href = "examapp.html";}
+    else
     {window.location.href = "bankapp.html";}
-    window.location.href = "examapp.html";
    }
    else
    {
