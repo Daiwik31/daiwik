@@ -42,7 +42,10 @@ document.getElementById('signinForm').addEventListener("submit", function(event)
    {
     localStorage.setItem('currentUser', JSON.stringify(user));
     alert("Login successful!!");
-    window.location.href = "index.html";
+    let option=confirm("If you want to start exam then click ok...")
+    if(option)
+    {window.location.href = "examapp.html";}
+    window.location.href = "bankapp.html";
    }
    else
    {
